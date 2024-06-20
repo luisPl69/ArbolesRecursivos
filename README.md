@@ -1,18 +1,20 @@
-## Getting Started
+## Version 2.2.1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Ejercicio 01: Insertar en un Árbol Binario de Búsqueda (BST)
 
-## Folder Structure
+Descripcion :Implementa un algoritmo para insertar valores en un Árbol Binario de Búsqueda (BST). Un
+BST es un árbol binario donde cada nodo sigue las siguientes reglas:
 
-The workspace contains two folders by default, where:
+• El subárbol izquierdo de un nodo contiene solo nodos con valores menores que el nodo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+• El subárbol derecho de un nodo contiene solo nodos con valores mayores que el nodo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Ejercicio 02: Invertir un Árbol Binario
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Descripción: Dada la raíz de un árbol binario, implementa un algoritmo que devuelva el árbol binario
+invertido.
 
-## Dependency Management
+## Ejercicio 04: Calcular la Profundidad Máxima
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Descripción: Dada la raíz de un árbol binario, implementa un algoritmo que devuelva su profundidad
+máxima
