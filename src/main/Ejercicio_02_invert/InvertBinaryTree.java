@@ -4,9 +4,7 @@ import main.Materia.Models.Node;
 
 public class InvertBinaryTree {
 
-    public void invertBinaryTreeTest(){
-        
-    }
+    
 
     public Node invertTree(Node root) {
         // TODO Auto-generated method stub
