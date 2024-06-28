@@ -14,6 +14,11 @@ BST es un árbol binario donde cada nodo sigue las siguientes reglas:
 Descripción: Dada la raíz de un árbol binario, implementa un algoritmo que devuelva el árbol binario
 invertido.
 
+## Ejercicio 03: Listar Niveles en Listas Enlazadas
+ 
+Descripción: Implementa un algoritmo que devuelva una lista enlazada con los nodos de cada nivel de un
+árbol binario. Si el árbol tiene N niveles, debes devolver N listas enlazadas.
+
 ## Ejercicio 04: Calcular la Profundidad Máxima
 
 Descripción: Dada la raíz de un árbol binario, implementa un algoritmo que devuelva su profundidad
