@@ -35,6 +35,16 @@ public class Node {
         this.left = null;  // Inicializa el hijo izquierdo a null
         this.right = null; // Inicializa el hijo derecho a null
     }
+
+    public int getHeight() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getHeight'");
+    }
+
+    public void setRight(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setRight'");
+    }
 }
 
 

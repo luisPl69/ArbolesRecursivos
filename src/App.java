@@ -1,45 +1,41 @@
-import main.Materia.Controles.ArbolBinario;
-import main.Materia.Models.Node;
-
-/*
- *        1   
- *    2      3
- * 4      5     6     
- * 7      8
- */
+import main.Materia.Controles.Graph;
+import main.Materia.Controles.SetsClase;
+import main.Materia.Models.NodeGraph;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        ArbolBinario arbolBinario = new ArbolBinario();
-        Node nodeRoot = new Node(1);
+        runGraph();
+        runSets();
+    }
 
-        nodeRoot.setLeft(new Node(2));
-        nodeRoot.setRight(new Node(3));
+    private static void runSets() {
+        SetsClase setsClase = new SetsClase();
+        
+    }
 
-        nodeRoot.getLeft().setLeft(new Node(4));
-        nodeRoot.getLeft().setRight(new Node(5)); // Corrección aquí
+    private static void runGraph() {
+        Graph graph = new Graph();
 
-        nodeRoot.getRight().setRight(new Node(6));
+        // Agregar nodos
+        NodeGraph node1 = graph.addNode(1);
+        NodeGraph node2 = graph.addNode(2);
+        NodeGraph node3 = graph.addNode(3);
+        NodeGraph node4 = graph.addNode(4);
+        NodeGraph node5 = graph.addNode(5);
+        NodeGraph node6 = graph.addNode(6);
+        NodeGraph node7 = graph.addNode(7);
+        NodeGraph node8 = graph.addNode(8);
 
-        nodeRoot.getLeft().getLeft().setLeft(new Node(7));
-        nodeRoot.getLeft().getRight().setLeft(new Node(8));
+        // Agregar aristas
+        graph.addEdge(node1, node2);
+        graph.addEdge(node1, node3);
+        graph.addEdge(node2, node4);
+        graph.addEdge(node4, node7);
+        graph.addEdge(node2, node5);
+        graph.addEdge(node5, node8);
+        graph.addEdge(node3, node6);
 
-        System.out.println("PreOrdenar - Loop");
-        arbolBinario.preOrdenLoop(nodeRoot);
-
-        System.out.println("PreOrdenar - Recursivo");
-        arbolBinario.preOrderRecursivo(nodeRoot);
-        System.out.println();
-
-        System.out.println("PostOrdenar - Loop");
-        arbolBinario.postOrderLoop(nodeRoot);
-
-        System.out.println("PostOrdenar - Recursivo");
-        arbolBinario.postOrderRecursivo(nodeRoot);
-        System.out.println();
-
-        System.out.println("InOrdenar - Recursivo");
-        arbolBinario.inOrderRecursivo(nodeRoot);
-        System.out.println();
+        // Imprimir el grafo
+        graph.printGraph();
     }
 }
